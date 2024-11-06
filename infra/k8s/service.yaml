@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28-srv
+spec:
+  selector:
+    app: text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9024
+  type: ClusterIP

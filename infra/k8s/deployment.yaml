@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28-depl
+  labels:
+    app: text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28
+  template:
+    metadata:
+      labels:
+        app: text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28
+    spec:
+      containers:
+        - name: text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28
+          image: 216084506783.dkr.ecr.ap-south-1.amazonaws.com/backstract_apps:text-color-editor--coll-6dac587277b14e25b81ba64b79c8df28
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9024
